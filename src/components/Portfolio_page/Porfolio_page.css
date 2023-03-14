@@ -1,0 +1,236 @@
+.Profolio_component {
+    /* position: relative; */
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////// */
+.Test_img {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    /* height: 60vh; */
+    background-color: rgba(255, 0, 0, 0.521);
+}
+.Test_img img {
+    width: 100%;
+}
+.test_img_containt {
+    position: relative;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999;
+    background-color: white;
+}
+.detailssss {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.582);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.test_img_containt h2 {
+    color: red;
+}
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+.hero_container.portfolio {
+    padding: 0 ;
+    /* padding-bottom: 15rem; */
+    /* overflow: hidden; */
+}
+
+.hero_container.portfolio .hero_containt{
+    padding-left: 0 !important;
+
+
+}
+
+
+.hero_container.portfolio .hero_right_section {
+    /* border: 4px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+}
+
+.hero_container.portfolio .hero_right_section h2 {
+    font-size: 8vw !important;
+    margin: 2rem;
+    text-align: center;
+    
+}
+
+.hero_container.portfolio .hero_right_section .hero_name {
+    font-size: 1.8rem !important;
+    margin-top: 4rem;
+    text-align: center;
+    color: orangered;
+    width: 80%;
+    
+}
+
+.hero_container.portfolio .hero_right_section h4 {
+    font-size: 2rem !important;
+    margin: 0rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.829);
+    width: 80%;
+    
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+.image_background_container {
+    position: absolute;
+    z-index: -1;
+    top: 5rem;
+    right: 0;
+    left: 0;
+    /* border: 3px solid red; */
+    /* border-radius: 15rem; */
+    border-bottom-right-radius: 25vw;
+    overflow: hidden;
+    height: 100vh;
+    min-height: 580px;
+    width: 116vw;
+    transform: translate(-2.6rem, -12rem) rotate(10deg);
+    /* background-color: white !important; */
+    background-color: white !important;
+
+
+}
+
+
+.image_background {
+    /* background-image: linear-gradient( to right,  #0a0a4600 20%,  rgba(0, 0, 0, 0.959) 70%), url(./hero.png); */
+    background-position: center;    
+    /* border: 1px solid red; */
+    height: 150vh;
+    transform: rotate(-10deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /* min-width: 50rem; */
+    transform: rotateY(180deg);
+    background-color: white !important;
+
+
+    /* position: absolute; */
+    /* right: -1rem; */
+    /* left: -1rem; */
+    /* top: 0; */
+
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.image_background_container .image_background_container {
+    position: relative;
+}
+
+
+
+.hero_container.portfolio .image_background {
+    background-image: linear-gradient( to right,  #000000cb 20%,  rgba(9, 13, 65, 0.849) 70%), url(./portfolioHero.jpg);
+    transform: rotateY(0deg);
+    /* width: 100vw; */
+
+}
+
+@media(max-width: 800px) { 
+.hero_container.portfolio .hero_right_section h2 {
+    font-size: 4rem !important;
+    
+}
+}
+
+@media(max-width: 501px) { 
+    .hero_container.portfolio .hero_right_section h2 {
+        font-size: 13vw !important;
+        
+    
+    }
+
+
+
+    
+    
+        .hero_container.portfolio .image_background_container {
+            display: block;
+        }
+    
+        .hero_container.portfolio .hero_containt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            height: 60vh;
+        }
+    
+        .hero_container.portfolio .hero_right_section {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+
+    
+  
+        .hero_container.portfolio .hero_img_container {
+            display: none;
+            justify-content: center;
+        }
+    
+        .hero_container.portfolio .image_background_container {
+            /* height: 100vh; */
+            min-height: 580px;
+            transform: translate(0rem, 0rem) rotate(0deg);
+            height: 100% !important;
+            top: 0rem;
+            right: 5rem;
+            left: -2rem;
+            border: 5px solid red;
+            /* position: relative; */
+        }
+        
+        .hero_container.portfolio .image_background {
+            transform: rotateY(0deg);
+            height: 60vh;
+            min-height: 20rem !important;
+        
+        }
+
+        
+        .hero_container.portfolio .hero_right_section .hero_name {
+            font-size: 1.3rem !important;
+            margin-top: 0rem;
+            
+        }
+        
+        .hero_container.portfolio .hero_right_section h4 {
+            font-size: 1.4rem !important;
+            
+        }
+    
+    }

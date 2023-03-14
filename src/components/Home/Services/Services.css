@@ -1,0 +1,109 @@
+.Services_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
+    padding-bottom: 0rem;
+    padding-top: 0;
+    /* margin-bottom: 5rem !important; */
+    /* border: 1px solid red; */
+    background-color: transparent;
+    
+    color: white;
+}
+
+.Services_container .services_containt {
+    width: 85%;
+    /* border: 1px solid rgb(204, 204, 204); */
+    display: grid;
+    gap: 2rem;
+    /* padding: 1rem; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* padding-bottom: 8rem; */
+}
+
+.Services_container .single_service_container {
+    border: 1px solid white;
+    border: 1px solid rgba(255, 68, 0, 0.432);
+    /* box-shadow: 0 0 1rem rgba(255, 68, 0, 0.26); */
+
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    /* background-color: rgb(7, 12, 37);
+    background-color: rgb(4, 8, 31); */
+
+    border-radius: 1rem;
+    background-color: white;
+    /* box-shadow: 0 0 1rem white; */
+}
+
+.Services_container .single_service_container h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    /* border: 1px solid red; */
+    text-align: center;
+    color: black;
+}
+
+.Services_container .single_service_container p {
+    margin: .5rem 0;
+    font-size: 1.23rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.788);
+    /* color: rgba(255, 255, 255, 0.668); */
+}
+
+.Services_container .single_service_container i {
+    font-size: 3rem;
+    color: orangered;
+}
+
+
+@media(max-width: 900px) {
+    .Services_container .services_containt {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+    .Services_container .services_containt {
+        grid-template-columns: 1fr;
+    }
+
+    .background_codes { 
+        background-image: linear-gradient(to left, rgba(0, 102, 255, 0), rgba(0, 0, 0, 0.74)) , url(./codes.webp) !important;
+    
+    }
+}
+
+.portfolio_tilte_box.service {
+    width: 85%;
+}
+
+.portfolio_tilte_box h2 {
+    color: black;
+}
+
+
+.background_codes {
+    position: fixed;
+    background-position: right;
+    z-index: -91;
+    inset: .5rem;  
+    background-image: linear-gradient(to left, rgba(9, 13, 49, 0.897), rgba(0, 0, 0, 0.808)) , url(./codes.webp);
+    /* background-image: linear-gradient(to left, rgba(9, 13, 49, 0), rgba(0, 0, 0, 0)) , url(./codes.webp); */
+    /* background-image: linear-gradient(to left, rgba(9, 13, 49, 0), rgba(0, 0, 0, 0.808)) , url(./codes.webp); */
+
+}
+/* 
+.background_codes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cov;
+} */

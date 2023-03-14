@@ -1,0 +1,186 @@
+html, body {
+    overflow-x: hidden;
+}
+
+.NavBar_container.is-visible {
+   background-color: blue;
+}
+
+.NavBar_container.is-hidden {
+  background-color: black;
+}
+
+/* body {
+    background-color: black;
+} */
+
+
+.NavBar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 4rem;
+    padding: 1rem 4rem;
+    padding: 1rem 6rem;
+    height: 2rem;
+    overflow: hidden;
+    color: black;
+    position: fixed;
+    left: 0rem;
+    right: 0rem;
+    top: 0;
+    z-index: 99999999999999999;
+    
+}
+
+.NavBar_container.color {
+    background-color: white !important;
+}
+
+.NavBar_container.color ul li,
+.NavBar_container.color h3,
+.NavBar_container.color i {
+   color: black !important;
+}
+
+.NavBar_container h3 {
+    color: white;
+}
+
+
+
+.NavBar_container .logo_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+.NavBar_container h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    cursor: default;
+}
+
+.logo_section h3 span {
+    color: orangered;
+}
+
+.NavBar_container ul {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.NavBar_container ul li {
+    list-style-type: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.NavBar_container ul li:hover {
+    color: orangered;
+}
+
+.NavBar_container i {
+    display: none;
+    color: black;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+
+@media(max-width: 600px) {
+    .NavBar_container {
+        padding: .5rem 2rem;
+
+    }
+
+
+    .NavBar_container i {
+        display: block;
+    }
+
+    .NavBar_container ul {
+        display: none;
+    }
+
+    .NavBar_container.active {
+        flex-direction: column;
+        /* justify-content: center; */
+        height:50vh;
+        min-height: 20rem;
+        /* background-color: rgb(32, 31, 31); */
+        background-color: white;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.527);
+        
+    }
+
+
+    .NavBar_container.active ul {
+        display: flex;
+        padding: 2rem 0;
+        /* border: 1px solid red; */
+        height: 100%;
+        width: 100%;
+        /* align-items: center; */
+        /* justify-content: center; */
+
+    }
+
+ 
+
+    .NavBar_container.active ul li {
+        /* border: 1px solid red; */
+        width: 10rem;
+        text-align: center;
+        padding: .4rem 0;
+        cursor: pointer;
+        color: black !important;
+    }
+
+    .NavBar_container.active .logo_section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* color: white; */
+    }
+
+    .NavBar_container.active i {
+        /* color: white; */
+    }
+
+
+    .NavBar_container.active ul {
+       flex-direction: column;
+       gap: 1.5rem;
+       align-items: center;
+       /* color: white; */
+    }
+
+    
+}
+
+@media(max-width: 501px) {
+    .NavBar_container {
+        color: black;
+    background-color: white;
+
+    }
+
+    .NavBar_container h3 {
+        color: black;
+    }
+
+    .NavBar_container i {
+        color: black;
+        font-size: 2rem;
+    }
+
+}
+

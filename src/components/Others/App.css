@@ -1,0 +1,14 @@
+ .App {
+ position: relative;
+
+}
+body {
+  overflow: hidden;
+}
+.Link {
+  text-decoration: none !important;
+}
+
+i {
+  cursor: pointer;
+}

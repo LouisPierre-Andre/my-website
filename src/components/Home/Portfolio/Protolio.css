@@ -1,0 +1,142 @@
+.Protolio_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding-top: 6rem;
+    background-color: white;
+}
+
+.Protolio_container.profolio_page {
+   padding-bottom: 10rem;
+}
+
+.portfolio_tilte_box {
+    position:  relative;
+    padding: 1rem 0;
+    width: 80%;
+    /* border: 1px solid red;    */
+}
+
+.title_style1 ,
+.title_style2 {
+    position: absolute;
+    height: 3px;
+    width: 9rem;
+    left: 0;
+    top: 5rem;
+    background-color: orangered;
+    border-radius: 1rem;
+}
+
+.title_style2 {
+    top: 5.5rem;
+    width: 5rem;
+}
+
+.portfolio_tilte_box h2 {
+    font-size: 2rem;
+}
+
+.portfolio_containt {
+    width: 80%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.single_project {
+    /* border: 1px solid red; */
+    padding: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.295);
+}
+
+.single_project img {
+    width: 100%;
+    /* height: 15vw; */
+    object-fit: contain;
+    /* border: 1px solid rgba(0, 0, 0, 0.137); */
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.388);
+    /* border: 1px solid orangered; */
+}
+
+.single_project p {
+    margin: 0rem 0;
+    margin-bottom: .51rem;
+    color: rgba(0, 0, 0, 0.726);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.single_project_button {
+    width: 100%;
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    /* padding: 0 3rem; */
+}
+
+.single_project_button .button {
+    width: 40%;
+    padding: .2rem 0;
+    border: 1px outset orangered;
+    background-color: transparent;
+    color: orangered;
+    font-weight: 500;
+    font-size: .91rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single_project_button .visite {
+    background-color: rgba(255, 68, 0, 0.145);
+    /* font-weight: bold; */
+}
+
+@media(max-width: 1000px) {
+    .portfolio_containt {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+    } 
+
+    .single_project img {
+        /* height: 25vw; */
+    }
+}
+
+@media(max-width: 600px) {
+    .portfolio_containt {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    } 
+
+    .single_project img {
+        /* height: 50vw; */
+    
+}
+
+.Protolio_container {
+    padding-top: 2rem;
+}
+
+.portfolio_tilte_box h2 {
+    font-size: 1.7rem;
+}
+
+
+.title_style1 ,
+.title_style2 {
+    top: 4.3rem;
+}
+
+.title_style2 {
+    top: 4.8rem;
+}
+}

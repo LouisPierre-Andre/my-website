@@ -1,0 +1,190 @@
+.Skills_container {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid rgb(199, 199, 199); */
+    width: 100%;
+    background-color: white;
+    padding-bottom: 8rem;
+}
+
+.skills_containt {
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    border: 1px solid rgba(255, 68, 0, 0.308);
+    background-color: rgba(255, 68, 0, 0.082);
+    background-color: rgba(255, 68, 0, 0.041);
+    /* background-color: rgba(0, 0, 0, 0.07); */
+    /* box-shadow: 0 0 2rem rgba(0, 0, 0, 0.103); */
+}
+
+.education_containt {
+    width: 50%;
+    border-left: 1px solid orangered;
+    padding: 0 1rem;
+    margin-left: 2rem;
+}
+
+.education_containt p {
+    margin: .4rem 0;
+    font-size: 1.1rem;
+}
+
+.education_containt h2 {
+    font-size: 2rem;
+}
+
+.education_containt .title {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.800);
+    transform: translateX(-.7rem);
+
+    /* padding-top: 2rem; */
+}
+
+.education_containt .years {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.815);
+    color: orangered;
+}
+
+.education_containt h4 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.education_containt .text {
+    font-size: 1.18rem;
+    width: 80%;
+    color: rgba(0, 0, 0, 0.800);
+    padding-bottom: 2rem;
+}
+
+.education_containt .tilte_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.education_containt .tilte_box .bullet {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 10rem;
+    background-color: orangered;
+    transform: translateX(-1.45rem);
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+/* skill_containt */
+.skill_containt {
+    /* border: 1px outset red; */
+    width: 40%;
+}
+
+.skill_containt h2 {
+    font-size: 2rem;
+}
+
+.skills {
+    /* border: 1px outset rebeccapurple; */
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.single_skill_container {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px outset rebeccapurple; */
+    padding-bottom: 2rem ;
+}
+
+.single_skill_container .single_skill {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.single_skill_container .single_skill h5,
+.single_skill_container .single_skill p {
+    margin: 0;
+}
+
+.single_skill_container .single_skill h5 {
+    font-size: 1.2rem;
+    color: rgb(46, 46, 46);
+}
+
+.single_skill_container .range_container {
+   width: 100%;
+   position: relative;
+   /* border: 1px solid gray; */
+   background-color: orangered;
+   height: .4rem;
+   border-radius: 1rem;
+}
+
+.single_skill_container .range_containt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 80%;
+    background-color: rgb(199, 198, 198);
+
+}
+
+@media(max-width: 1000px) {
+    .skills_containt {
+        flex-direction: column;
+    }
+.education_containt .text {
+    width: 100%;
+}
+
+.education_containt {
+    width: 85%;
+}
+
+.skill_containt {
+    width: 85%;
+    padding: 0 2rem;
+}
+
+.skill_containt .skills {
+    padding-top: 2rem;
+}
+}
+
+@media(max-width: 501px) {
+    .Skills_container {
+        padding-top: 6rem;
+    }
+
+    .skills_containt {
+        width: 100%;
+        padding: 3rem 0;
+    }
+    .education_containt {
+        margin-left: 1rem;
+    }
+
+    .education_containt h2 {
+        font-size: 1.7rem;
+
+    }
+
+    .skill_containt h2 {
+        font-size: 1.7rem !important;
+    }
+
+    .single_skill_container .single_skill h5 {
+        font-size: 1rem;
+    }
+
+    .skill_containt {
+      padding-left: 1rem;
+    }
+}

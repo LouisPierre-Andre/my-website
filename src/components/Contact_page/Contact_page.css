@@ -1,0 +1,11 @@
+/* .hero_container.portfolio.Contact {
+    background-image: linear-gradient(red, blue);
+} */
+
+.hero_container.portfolio.Contact .image_background {
+    background-image: linear-gradient( to right,  #000000af 20%,  rgba(0, 0, 0, 0.726) 70%), url(./contact_hero2.jpg);
+    background-position: top ;
+
+}
+
+
